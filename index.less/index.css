@@ -1,0 +1,399 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Anton', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-navigation {
+  width: 100%;
+  height: 100%;
+  background: #e5e4e2;
+}
+.main-navigation .nav-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.main-navigation .logo-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 7.5rem;
+  padding: 20px 0;
+}
+@media (max-width: 500px) {
+  .main-navigation .logo-heading {
+    width: 100%;
+    font-size: 5rem;
+  }
+}
+.main-navigation .nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-navigation a {
+  font-size: 2rem;
+  color: #454A59;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro h2 {
+  padding: 15px;
+  text-align: center;
+}
+.home .intro p {
+  padding: 0 15px;
+  text-align: center;
+}
+.home .intro img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
+.home .cannabis-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .cannabis-images .flavor {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .cannabis-images .mood {
+    display: none;
+  }
+}
+.home .cannabis-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .cannabis-images img {
+    width: 100%;
+  }
+}
+.home .medical {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .medical {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    padding: 20px 15px;
+  }
+}
+.home .medical .medical-text {
+  width: 50%;
+}
+.home .medical .medical-text h3 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .home .medical .medical-text h3 {
+    text-align: center;
+  }
+}
+.home .medical .medical-text p {
+  margin-bottom: 26px;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .home .medical .medical-text p {
+    text-align: center;
+  }
+}
+.home .medical .medical-text .btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 100px;
+  height: 45px;
+  background-color: #119e47;
+  color: wild-sand;
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .medical .medical-text .btn:hover {
+  color: btn-bg-color;
+  background-color: #e5e4e2;
+}
+@media (max-width: 500px) {
+  .home .medical .medical-text .btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .medical .medical-text {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+.home .medical .medical-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .medical .medical-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.home .medical .medical-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .medical {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #81848E;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #119e47;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.two_fifth,
+.three_fifth,
+.imgholder,
+.team,
+.team_name,
+.team_title {
+  text-align: center;
+  font-size: 2rem;
+}
+.clear {
+  padding: 5px;
+  margin: 5px;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+.one-quarter {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 5rem;
+  text-align: center;
+}
