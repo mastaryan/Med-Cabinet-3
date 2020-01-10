@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+  <title>Medical Cabinet 3</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu&display=swap" rel="stylesheet">  
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+ <!-- navigation code here -->
+ <header class="main-navigation">
+ <div class="container nav-container">
+      <h1 class="logo-heading">Medical Cabinet 3</h1>
+    <nav class="nav">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="resources.html">Resources</a>
+      <a class="nav-link" href="about.html">About Us</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="#">Sign In</a>
+    </nav>
+  </div>
+</header>
+
+<h2 class="how-old">Are you over age 18?</h2>
+
+<div class="age-button">
+<button onclick="myFunctionYes()">Yes</button>
+<button onclick="myFunctionNo()">No</button>
+</div>
+
+<p id="demo"></p>
+
+<script>
+function myFunctionYes() {
+  var txt;
+  if (confirm("Click here to enter Med Cabinet 3!")) {
+  } 
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+<script>
+    function myFunctionNo() {
+      var txt;
+      if (confirm("Come back when you're 18!")) {
+      } 
+      document.getElementById("demo").innerHTML = txt;
+    }
+    </script>
+
+</body>
+</html>
